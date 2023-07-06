@@ -1,9 +1,26 @@
 apiVersion: v1
 entries:
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 6.8.22-wmde1
+    created: "2023-07-06T11:24:08.072500757+02:00"
+    description: Official Elastic helm chart for Elasticsearch
+    digest: 9362ad09567ce74fa97c6890035878e5616bb27631d251813c6edfaf520724c0
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - elasticsearch-6.8.22-wmde1.tgz
+    version: 6.8.22-wmde1
   schmelasticsearch:
   - apiVersion: v1
     appVersion: 6.8.22-wmde1
-    created: "2023-07-06T10:58:27.084212399+02:00"
+    created: "2023-07-06T11:24:08.076209998+02:00"
     description: Official Elastic helm chart for Elasticsearch
     digest: d00138e111f589f8d46272d382cc0257ef72304703286e556ffe9cbe8f7e263a
     home: https://github.com/elastic/helm-charts
@@ -15,6 +32,6 @@ entries:
     sources:
     - https://github.com/elastic/elasticsearch
     urls:
-    - https://deer-wmde.github.io/debug-charts/schmelasticsearch-6.8.22-wmde1.tgz
+    - schmelasticsearch-6.8.22-wmde1.tgz
     version: 6.8.22-wmde1
-generated: "2023-07-06T10:58:27.082180713+02:00"
+generated: "2023-07-06T11:24:08.068568719+02:00"
