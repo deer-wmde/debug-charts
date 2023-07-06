@@ -15,6 +15,6 @@ entries:
     sources:
     - https://github.com/elastic/elasticsearch
     urls:
-    - schmelasticsearch-6.8.22-wmde1.tgz
+    - https://deer-wmde.github.io/debug-charts/schmelasticsearch-6.8.22-wmde1.tgz
     version: 6.8.22-wmde1
 generated: "2023-07-06T10:58:27.082180713+02:00"
