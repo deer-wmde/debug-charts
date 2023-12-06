@@ -68,6 +68,26 @@ Common lists of environment variables
 - name: WBSTACK_SUMMARY_CREATION_RATE_RANGES
   value: {{ join "," .Values.wbstack.summaryCreationRateRanges | quote }}
 {{- end }}
+{{- if .Values.wbstack.signupThrottlingLimit }}
+- name: WBSTACK_SIGNUP_THROTTLING_LIMIT
+  value: {{ .Values.wbstack.signupThrottlingLimit | quote }}
+{{- end }}
+{{- if .Values.wbstack.signupThrottlingRange }}
+- name: WBSTACK_SIGNUP_THROTTLING_RANGE
+  value: {{ .Values.wbstack.signupThrottlingRange | quote }}
+{{- end }}
+{{- if .Values.wbstack.qsBatchPendingTimeout }}
+- name: WBSTACK_QS_BATCH_PENDING_TIMEOUT
+  value: {{ .Values.wbstack.qsBatchPendingTimeout | quote }}
+{{- end }}
+{{- if .Values.wbstack.qsBatchMarkFailedAfter }}
+- name: WBSTACK_QS_BATCH_MARK_FAILED_AFTER
+  value: {{ .Values.wbstack.qsBatchMarkFailedAfter | quote }}
+{{- end }}
+{{- if .Values.wbstack.qsBatchEntityLimit }}
+- name: WBSTACK_QS_BATCH_ENTITY_LIMIT
+  value: {{ .Values.wbstack.qsBatchEntityLimit | quote }}
+{{- end }}
 {{- if .Values.wbstack.contact.mail.recipient }}
 - name: WBSTACK_CONTACT_MAIL_RECIPIENT
   value: {{ .Values.wbstack.contact.mail.recipient | quote }}
@@ -79,6 +99,10 @@ Common lists of environment variables
 {{- if .Values.wbstack.elasticSearch.enabledByDefault }}
 - name: WBSTACK_ELASTICSEARCH_ENABLED_BY_DEFAULT
   value: {{ .Values.wbstack.elasticSearch.enabledByDefault | quote }}
+{{- end }}
+{{- if .Values.trustedProxy.proxies }}
+- name: TRUSTED_PROXY_PROXIES
+  value: {{ join "," .Values.trustedProxy.proxies | quote }}
 {{- end }}
 {{- end -}}
 
