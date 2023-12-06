@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/wbstack/ui
+  repository: ghcr.io/deer-wmde/wbaas-ui
   tag: "3.94"
   pullPolicy: IfNotPresent
 
