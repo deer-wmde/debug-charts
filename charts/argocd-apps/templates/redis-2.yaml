@@ -11,7 +11,7 @@ spec:
     server: {{ .Values.clusterUrl }}
   project: {{ .Values.environment }}
   sources:
-    - repoURL: {{ .Values.repoUrls.bitnami }}
+    - repoURL: {{ .Values.repoUrls.bitnamiArchive }}
       targetRevision: {{ .Values.chartVersions.redis2 }}
       chart: redis
       helm:
