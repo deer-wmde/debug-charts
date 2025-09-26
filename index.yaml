@@ -55,6 +55,25 @@ entries:
     urls:
     - https://github.com/deer-wmde/debug-charts/releases/download/argocd-config-2.0.1/argocd-config-2.0.1.tgz
     version: 2.0.1
+  bitnami-common:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.2.0
+    created: "2025-09-26T13:58:39.904936742Z"
+    description: Forked bitnami-common chart for legacy deployements
+    digest: 65473a7afae0f42af9176b6237b7e18baea93ba18566a31b81fb872d672daf87
+    home: https://github.com/deer-wmde/debug-charts/tree/main/charts/bitnami-common
+    maintainers:
+    - name: WBStack
+      url: https://github.com/deer-wmde/debug-charts
+    name: bitnami-common
+    sources:
+    - https://github.com/deer-wmde/debug-charts
+    type: library
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/bitnami-common-2.2.0/bitnami-common-2.2.0.tgz
+    version: 2.2.0
   certificates:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -317,4 +336,4 @@ entries:
     urls:
     - https://github.com/deer-wmde/debug-charts/releases/download/wikibase-cloud-clusterissuers-0.3.1/wikibase-cloud-clusterissuers-0.3.1.tgz
     version: 0.3.1
-generated: "2023-07-06T11:24:08.068568719+02:00"
+generated: "2025-09-26T13:58:39.90494636Z"
