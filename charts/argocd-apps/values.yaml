@@ -1,3 +1,6 @@
+chartUrls:
+  redis: https://github.com/wbstack/bitnami-legacy/releases/download/redis%2F17.3.8/redis-17.3.8.tgz
+
 repoUrls:
   deploy: https://github.com/wmde/wbaas-deploy
   wbstack: https://wbstack.github.io/charts
