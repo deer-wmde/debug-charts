@@ -11,7 +11,7 @@ spec:
     server: {{ .Values.clusterUrl }}
   project: {{ .Values.environment }}
   sources:
-    - repoURL: {{ .Values.repoUrls.wbstack }}
+    - repoURL: "https://deer-wmde.github.io/debug-charts"
       targetRevision: {{ .Values.chartVersions.redis }}
       chart: redis
       helm:
