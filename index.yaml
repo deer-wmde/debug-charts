@@ -1,5 +1,74 @@
 apiVersion: v1
 entries:
+  anubis:
+  - apiVersion: v2
+    created: "2025-09-26T13:07:11.560263708Z"
+    description: A Helm chart for Kubernetes
+    digest: 98f2ee9aa627dd6bcfee6b46eaeefc844f0fff8b672143f9eb1ca1e348130eb3
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: anubis
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/anubis-0.1.0/anubis-0.1.0.tgz
+    version: 0.1.0
+  api:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:11.804695556Z"
+    description: A Helm chart for the WBStack API
+    digest: 1323e7ff321bc67a340377233176dc64c2fe98859351ebd33025c5e17ba61ffb
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: api
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/api-0.33.0/api-0.33.0.tgz
+    version: 0.33.0
+  argocd-apps:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:12.046373577Z"
+    description: Chart to deploy WBaaS apps in an "app-of-apps" pattern via ArgoCD
+    digest: 8e8172e7de3ed2da9e8cc5ace46fa8c2d89d1f3b8562e3d2ae8ac1779dbd6f0f
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: argocd-apps
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/argocd-apps-2.0.1/argocd-apps-2.0.1.tgz
+    version: 2.0.1
+  argocd-config:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:12.269305998Z"
+    description: Chart to deploy ArgoCD configuration (including the argocd-apps chart)
+    digest: e6e0ee8bee6294b24c68092773ecb6abd485eb93503e3328c4bcfef099799563
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: argocd-config
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/argocd-config-2.0.1/argocd-config-2.0.1.tgz
+    version: 2.0.1
+  certificates:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-26T13:07:12.552682464Z"
+    description: A Helm chart for making generic certificates
+    digest: 346772dbcf85896678622fe02dd405ca6e6af8b6a1027e2261676881aaa0163f
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: certificates
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/certificates-0.1.1/certificates-0.1.1.tgz
+    version: 0.1.1
   elasticsearch:
   - apiVersion: v1
     appVersion: 6.8.22-wmde1
@@ -17,6 +86,111 @@ entries:
     urls:
     - elasticsearch-6.8.22-wmde1.tgz
     version: 6.8.22-wmde1
+  elasticsearch-legacy:
+  - apiVersion: v1
+    appVersion: 6.8.22-wmde1
+    created: "2025-09-26T13:07:12.816778737Z"
+    description: Official Elastic helm chart for Elasticsearch
+    digest: 24f26841ec987a1fecf40a49186c47464797e4ddbb0e7968fcdf54397bd6de14
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch-legacy
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/elasticsearch-legacy-6.8.22-wmde2/elasticsearch-legacy-6.8.22-wmde2.tgz
+    version: 6.8.22-wmde2
+  istio-service-mesh:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-26T13:07:13.064341423Z"
+    dependencies:
+    - name: istiod
+      repository: https://istio-release.storage.googleapis.com/charts
+      version: 1.17.1
+    description: Create istiod as well as Pod and Service monitoring objects
+    digest: 137cb0836befe26c9c2e12682f2d000fe7ceceaddd7453894f4f3d7f690a2644
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: istio-service-mesh
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/istio-service-mesh-0.0.1/istio-service-mesh-0.0.1.tgz
+    version: 0.0.1
+  mediawiki:
+  - apiVersion: v1
+    appVersion: "1.37"
+    created: "2025-09-26T13:07:13.274892572Z"
+    description: A Helm wbstack flavoured MediaWiki
+    digest: 89fe9ebaff7a288ae8da45c49c4c973f538b0bfe8b891f52d4fc0524c26c43f8
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: mediawiki
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/mediawiki-0.13.0/mediawiki-0.13.0.tgz
+    version: 0.13.0
+  queryservice:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:13.473282951Z"
+    description: A Helm chart for Kubernetes
+    digest: b94c1b091d190f86099895d5128d8be35dc314189c18f8d7053115da78e4bf25
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: queryservice
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/queryservice-0.2.1/queryservice-0.2.1.tgz
+    version: 0.2.1
+  queryservice-gateway:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:13.697439165Z"
+    description: A Helm chart for Kubernetes
+    digest: 5f901a2f0534df7bc2a56ea76ef5e0c03ab7992beeacc836de7878878c69e8d7
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: queryservice-gateway
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/queryservice-gateway-0.2.0/queryservice-gateway-0.2.0.tgz
+    version: 0.2.0
+  queryservice-updater:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:13.912999951Z"
+    description: A Helm chart for Kubernetes
+    digest: 3fd0cb7cf1c875b5dc3aaefba1f128984ba5a0f2d0f72063035556cf58b63130
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: queryservice-updater
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/queryservice-updater-0.3.0/queryservice-updater-0.3.0.tgz
+    version: 0.3.0
+  redirects:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-26T13:07:14.148696891Z"
+    description: Create ingresses for redirecting subdomains elsewhere
+    digest: 3e942d4644c47f88486c4d90ee603e6f1f176b3a815afd271cf3df18a09a1fc7
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: redirects
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/redirects-2.0.0/redirects-2.0.0.tgz
+    version: 2.0.0
   schmelasticsearch:
   - apiVersion: v1
     appVersion: 6.8.22-wmde1
@@ -34,4 +208,113 @@ entries:
     urls:
     - schmelasticsearch-6.8.22-wmde1.tgz
     version: 6.8.22-wmde1
+  superset:
+  - apiVersion: v2
+    created: "2025-09-26T13:07:14.370598151Z"
+    description: A Helm chart for Kubernetes
+    digest: 65533690247dd7b296ef3bed7f2af8a5a7b48cb82472e9fb8dae3982af1bb205
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: superset
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/superset-0.1.0/superset-0.1.0.tgz
+    version: 0.1.0
+  tool-cradle:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:14.61252217Z"
+    description: A Helm chart for Kubernetes
+    digest: 04b9fc72a57be18a40ea07315b0cd684db2e82c682240de0653fb994636f961b
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: tool-cradle
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/tool-cradle-0.2.0/tool-cradle-0.2.0.tgz
+    version: 0.2.0
+  tool-querybuilder:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-26T13:07:14.872913135Z"
+    description: A Helm chart for deploying the Wikidata query builder https://gerrit.wikimedia.org/g/wikidata/query-builder
+    digest: 6666fc9be11f02ba3e5440f8bd6e7281804c8c36ae493356021d8bfe8ecd1a97
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: tool-querybuilder
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/tool-querybuilder-0.2.0/tool-querybuilder-0.2.0.tgz
+    version: 0.2.0
+  tool-quickstatements:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:15.071840132Z"
+    description: A Helm chart for Kubernetes
+    digest: 7c608501bc1c1edbbc07a538056178d5c94aba1f155709db1028f1e103c14e18
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: tool-quickstatements
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/tool-quickstatements-0.3.0/tool-quickstatements-0.3.0.tgz
+    version: 0.3.0
+  tool-widar:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:15.256200452Z"
+    description: A Helm chart for Kubernetes
+    digest: f08c66d409af991320c615ba4b8fac2acc5a77233e415722f27c80be203a3ca5
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: tool-widar
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/tool-widar-0.3.0/tool-widar-0.3.0.tgz
+    version: 0.3.0
+  ui:
+  - apiVersion: v1
+    appVersion: "3.0"
+    created: "2025-09-26T13:07:15.469854072Z"
+    description: A Helm chart for Kubernetes
+    digest: 3412b3f93234399dba410e2365c621b9c28b8c5750ea866341f4cdf6a538dd45
+    home: https://github.com/wbstack
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: ui
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/ui-0.4.0/ui-0.4.0.tgz
+    version: 0.4.0
+  wbaas-backup:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:15.68557084Z"
+    description: A Helm chart for WbaaS K8s Cronjob Backups
+    digest: 443102fe621eb87037e73a57e143328c16ed54dc5d88bcd9f001c34b939187be
+    maintainers:
+    - name: WMDE
+      url: https://github.com/wmde
+    name: wbaas-backup
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/wbaas-backup-0.1.0/wbaas-backup-0.1.0.tgz
+    version: 0.1.0
+  wikibase-cloud-clusterissuers:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-09-26T13:07:15.936932059Z"
+    description: A Helm chart for Kubernetes
+    digest: 49b49314b8533f4de31e9d5abc0f9da4441454b1785731191010ba2205253105
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: wikibase-cloud-clusterissuers
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/wikibase-cloud-clusterissuers-0.3.1/wikibase-cloud-clusterissuers-0.3.1.tgz
+    version: 0.3.1
 generated: "2023-07-06T11:24:08.068568719+02:00"
