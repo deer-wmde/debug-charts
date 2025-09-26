@@ -2,22 +2,13 @@ annotations:
   category: Infrastructure
 apiVersion: v2
 appVersion: 2.1.2
-description: A Library Helm Chart for grouping common logic between bitnami charts.
-  This chart is not deployable by itself.
-home: https://github.com/bitnami/charts/tree/main/bitnami/common
-icon: https://bitnami.com/downloads/logos/bitnami-mark.png
-keywords:
-- common
-- helper
-- template
-- function
-- bitnami
+description: Forked bitnami-common chart for legacy deployements
+home: https://github.com/deer-wmde/debug-charts/tree/main/charts/bitnami-common
 maintainers:
-- name: Bitnami
-  url: https://github.com/bitnami/charts
+- name: WBStack
+  url: https://github.com/wbstack/charts
 name: common
 sources:
-- https://github.com/bitnami/charts
-- https://www.bitnami.com/
+- https://github.com/wbstack/charts
 type: library
 version: 2.1.2
