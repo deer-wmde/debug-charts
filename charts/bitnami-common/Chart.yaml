@@ -7,7 +7,7 @@ home: https://github.com/deer-wmde/debug-charts/tree/main/charts/bitnami-common
 maintainers:
 - name: WBStack
   url: https://github.com/wbstack/charts
-name: common
+name: bitnami-common
 sources:
 - https://github.com/wbstack/charts
 type: library
