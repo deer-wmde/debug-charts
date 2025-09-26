@@ -16,6 +16,7 @@ apiVersion: v2
 appVersion: 7.2.5
 dependencies:
 - name: bitnami-common
+  repository: "@wbdebug"
   tags:
   - bitnami-common
   version: 2.x.x
