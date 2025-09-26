@@ -4,7 +4,6 @@ apiVersion: v2
 appVersion: 7.0.5
 dependencies:
 - name: bitnami-common
-  repository: https://deer-wmde.github.io/debug-charts/
   tags:
   - bitnami-common
   version: 2.x.x
