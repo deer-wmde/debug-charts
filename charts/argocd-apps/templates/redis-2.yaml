@@ -11,7 +11,8 @@ spec:
     server: {{ .Values.clusterUrl }}
   project: {{ .Values.environment }}
   sources:
-    - path: {{ .Values.chartUrls.redis2 }}
+    - repoURL: {{ .Values.chartUrls.redis2 }}
+      path: redis
       helm:
         valueFiles:
           - $deployRepo/k8s/argocd/{{ .Values.environment }}/redis-2.values.yaml
