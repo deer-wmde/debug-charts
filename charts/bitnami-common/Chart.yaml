@@ -1,14 +1,14 @@
 annotations:
   category: Infrastructure
 apiVersion: v2
-appVersion: 2.1.2
+appVersion: 2.2.0
 description: Forked bitnami-common chart for legacy deployements
 home: https://github.com/deer-wmde/debug-charts/tree/main/charts/bitnami-common
 maintainers:
 - name: WBStack
-  url: https://github.com/wbstack/charts
+  url: https://github.com/deer-wmde/debug-charts
 name: bitnami-common
 sources:
-- https://github.com/wbstack/charts
+- https://github.com/deer-wmde/debug-charts
 type: library
-version: 2.1.2
+version: 2.2.0
