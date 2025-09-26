@@ -11,8 +11,9 @@ spec:
     server: {{ .Values.clusterUrl }}
   project: {{ .Values.environment }}
   sources:
-    - repoURL: {{ .Values.chartUrls.redis2 }}
-      path: redis
+    - repoURL: {{ .Values.repoUrls.wbstack }}
+      targetRevision: {{ .Values.chartVersions.redis }}
+      chart: redis
       helm:
         valueFiles:
           - $deployRepo/k8s/argocd/{{ .Values.environment }}/redis-2.values.yaml
