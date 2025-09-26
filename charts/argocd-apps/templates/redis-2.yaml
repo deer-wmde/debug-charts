@@ -11,7 +11,7 @@ spec:
     server: {{ .Values.clusterUrl }}
   project: {{ .Values.environment }}
   sources:
-    - repoURL: {{ .Values.repoUrls.wbstack }}
+    - repoURL: {{ .Values.repoUrls.wbdebug }}
       targetRevision: {{ .Values.chartVersions.redis }}
       chart: redis
       helm:
