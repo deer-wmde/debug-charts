@@ -87,6 +87,26 @@ entries:
     urls:
     - https://github.com/deer-wmde/debug-charts/releases/download/bitnami-common-2.2.0/bitnami-common-2.2.0.tgz
     version: 2.2.0
+  bitnami-common-2:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.20.5
+    created: "2025-09-29T13:48:56.569358935Z"
+    description: Forked bitnami-common chart for legacy deployements
+    digest: 62bfcbe54c4cb63fdee8a3ee3fda565f748904088d2a5f3b6a62984635ebdfba
+    home: https://github.com/deer-wmde/debug-charts/tree/main/charts/bitnami-common-2
+    maintainers:
+    - name: WBStack
+      url: https://github.com/deer-wmde/debug-charts
+    name: bitnami-common-2
+    sources:
+    - https://github.com/deer-wmde/debug-charts
+    type: library
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/bitnami-common-2-2.20.5/bitnami-common-2-2.20.5.tgz
+    version: 2.20.5
   certificates:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -422,4 +442,4 @@ entries:
     urls:
     - https://github.com/deer-wmde/debug-charts/releases/download/wikibase-cloud-clusterissuers-0.3.1/wikibase-cloud-clusterissuers-0.3.1.tgz
     version: 0.3.1
-generated: "2025-09-29T13:32:40.553538669Z"
+generated: "2025-09-29T13:48:56.569379243Z"
