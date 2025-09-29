@@ -30,6 +30,19 @@ entries:
   argocd-apps:
   - apiVersion: v2
     appVersion: "1.0"
+    created: "2025-09-29T13:32:39.863933455Z"
+    description: Chart to deploy WBaaS apps in an "app-of-apps" pattern via ArgoCD
+    digest: 4d7523e6d3386f5bee0f7da789ee0426be98db99c9a7c20b70ba5f802aea4cb5
+    maintainers:
+    - name: WBstack
+      url: https://github.com/wbstack
+    name: argocd-apps
+    type: application
+    urls:
+    - https://github.com/deer-wmde/debug-charts/releases/download/argocd-apps-3.0.0/argocd-apps-3.0.0.tgz
+    version: 3.0.0
+  - apiVersion: v2
+    appVersion: "1.0"
     created: "2025-09-26T13:07:12.046373577Z"
     description: Chart to deploy WBaaS apps in an "app-of-apps" pattern via ArgoCD
     digest: 8e8172e7de3ed2da9e8cc5ace46fa8c2d89d1f3b8562e3d2ae8ac1779dbd6f0f
@@ -409,4 +422,4 @@ entries:
     urls:
     - https://github.com/deer-wmde/debug-charts/releases/download/wikibase-cloud-clusterissuers-0.3.1/wikibase-cloud-clusterissuers-0.3.1.tgz
     version: 0.3.1
-generated: "2025-09-26T14:20:08.750846699Z"
+generated: "2025-09-29T13:32:40.553538669Z"
