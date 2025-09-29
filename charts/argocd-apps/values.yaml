@@ -1,12 +1,6 @@
-chartUrls:
-  redis: https://github.com/wbstack/bitnami-legacy/releases/download/redis%2F17.3.8/redis-17.3.8.tgz
-  redis2: https://github.com/wbstack/bitnami-legacy/releases/download/redis%2F19.6.4/redis-19.6.4.tgz
-
 repoUrls:
   deploy: https://github.com/wmde/wbaas-deploy
   wbstack: https://deer-wmde.github.io/debug-charts
-  bitnami: https://raw.githubusercontent.com/wbstack/bitnami-legacy/ed0cf51bf0d2f21a99dda8269b806d2a20648986/bitnami
-  wbdebug: https://deer-wmde.github.io/debug-charts
 clusterUrl: https://kubernetes.default.svc
 environment: production
 
