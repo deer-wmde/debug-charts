@@ -1,6 +1,6 @@
 dependencies:
-- name: bitnami-common-2
+- name: bitnami-common
   repository: https://deer-wmde.github.io/debug-charts
-  version: 2.20.5
-digest: sha256:42ca41dbfb897070a5ea41268de9debf8f01a374ad6fe5cd7310f5580db4db12
-generated: "2025-09-29T15:52:52.06034886+02:00"
+  version: 2.2.0
+digest: sha256:a00902ed67f65d0a3754b29a79cf2fb8742b5f12ece00b3f8fdc5582b06fdcdc
+generated: "2025-09-29T15:56:43.18879259+02:00"
