@@ -1,0 +1,19 @@
+# Copyright Broadcom, Inc. All Rights Reserved.
+# SPDX-License-Identifier: APACHE-2.0
+
+annotations:
+  category: Infrastructure
+  licenses: Apache-2.0
+apiVersion: v2
+# Please make sure that version and appVersion are always the same.
+appVersion: 2.20.5
+description: Forked bitnami-common chart for legacy deployements
+home: https://github.com/deer-wmde/debug-charts/tree/main/charts/bitnami-common-2
+maintainers:
+- name: WBStack
+  url: https://github.com/deer-wmde/debug-charts
+name: bitnami-common-2
+sources:
+- https://github.com/deer-wmde/debug-charts
+type: library
+version: 2.20.5
