@@ -10,7 +10,7 @@ spec:
   sources:
     - repoURL: {{ .Values.repoUrls.debugCharts }}
       targetRevision: b5df27eb03ec3a50935420f9cc1b6e816421e33c
-      chart: argocd-apps
+      path: charts/argocd-apps
       helm:
         values: |
 {{ toYaml .Values | indent 10 }}
