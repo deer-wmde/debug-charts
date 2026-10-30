@@ -16,7 +16,7 @@ spec:
         valueFiles:
           - $deployRepo/k8s/argocd/{{ .Values.environment }}/valkey-a.values.yaml
     - repoURL: {{ .Values.repoUrls.debugDeploy }}
-      targetRevision: HEAD
+      targetRevision: b0a699b8079c0496a616cce6117ee1204add455f
       ref: deployRepo
   syncPolicy:
     automated:
