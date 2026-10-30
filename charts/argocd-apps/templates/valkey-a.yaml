@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: valkey-a
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: {{ .Values.clusterUrl }}
+  project: {{ .Values.environment }}
+  sources:
+    - repoURL: https://github.com/deer-wmde/debug-charts.git
+      targetRevision: b3233f46826d4b03f162b6f9a19b4ada1cf52149
+      path: charts/argocd-apps
+      helm:
+        valueFiles:
+          - $deployRepo/k8s/argocd/{{ .Values.environment }}/valkey-a.values.yaml
+    - repoURL: {{ .Values.repoUrls.debugDeploy }}
+      targetRevision: HEAD
+      ref: deployRepo
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: false
