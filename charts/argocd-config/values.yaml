@@ -6,6 +6,8 @@ repoUrls:
   deploy: https://github.com/wmde/wbaas-deploy
   wbstack: https://wbstack.github.io/charts
 
+  debugDeploy: https://github.com/deer-wmde/debug-wbaas-deploy
+  debugCharts: https://github.com/deer-wmde/debug-charts
+
   other:
   - oci://ghcr.io/aquasecurity/helm-charts/trivy-operator
-  - https://github.com/deer-wmde/debug-charts
