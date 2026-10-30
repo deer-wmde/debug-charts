@@ -9,7 +9,7 @@ spec:
   project: {{ .Values.environment }}
   sources:
     - repoURL: {{ .Values.repoUrls.debugCharts }}
-      targetRevision: b5df27eb03ec3a50935420f9cc1b6e816421e33c
+      targetRevision: 6a2bff7fa887b070371e2dacdfa86d55bf094bf1
       path: charts/argocd-apps
       helm:
         values: |
@@ -17,7 +17,7 @@ spec:
         valueFiles:
           - $deployRepo/k8s/argocd/{{ .Values.environment }}/app-of-apps.values.yaml
     - repoURL: {{ .Values.repoUrls.debugDeploy }}
-      targetRevision: b0a699b8079c0496a616cce6117ee1204add455f
+      targetRevision: 601e74de8aa72b3e1b8a33bef0bf579bd8e773b8
       ref: deployRepo
   syncPolicy:
     automated:
