@@ -10,7 +10,7 @@ spec:
   project: {{ .Values.environment }}
   sources:
     - repoURL: https://github.com/deer-wmde/debug-charts.git
-      targetRevision: 3ea1c7ba120435496421ebfd64903f05df13b8a2
+      targetRevision: 10cf427611c9639a929f55c833d9593e905f0afa
       path: charts/argocd-apps
       helm:
         valueFiles:
