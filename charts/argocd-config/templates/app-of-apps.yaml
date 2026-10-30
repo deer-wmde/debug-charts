@@ -9,7 +9,7 @@ spec:
   project: {{ .Values.environment }}
   sources:
     - repoURL: {{ .Values.repoUrls.debugCharts }}
-      targetRevision: 6a2bff7fa887b070371e2dacdfa86d55bf094bf1
+      targetRevision: aee38d7921ceb45104c3fe1d5bace76d4dbc08d1
       path: charts/argocd-apps
       helm:
         values: |
