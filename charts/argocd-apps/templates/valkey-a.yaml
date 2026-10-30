@@ -11,7 +11,7 @@ spec:
   sources:
     - repoURL: https://github.com/deer-wmde/debug-charts.git
       targetRevision: 10cf427611c9639a929f55c833d9593e905f0afa
-      path: charts/argocd-apps
+      path: charts/valkey
       helm:
         valueFiles:
           - $deployRepo/k8s/argocd/production/valkey-a.values.yaml
