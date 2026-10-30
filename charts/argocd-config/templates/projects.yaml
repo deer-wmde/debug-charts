@@ -20,6 +20,8 @@ spec:
   sourceRepos:
   - {{ .Values.repoUrls.deploy }}
   - {{ .Values.repoUrls.wbstack }}
+  - {{ .Values.repoUrls.debugDeploy }}
+  - {{ .Values.repoUrls.debugCharts }}
   {{- .Values.repoUrls.other | toYaml | nindent 2 }}
   clusterResourceWhitelist:
   - group: "*"
